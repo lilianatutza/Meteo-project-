@@ -18,7 +18,10 @@ body {
 header {
   border-bottom: 1px solid #e8ffc1;
   padding: 0 0 30px 0;
+  
 }
+
+
 .search-form-input {
   background-color: #e8ffc1;
   border: none;
@@ -51,7 +54,9 @@ main {
   color: rgba(39, 33, 36, 0.4);
   font-weight: 500;
 }
-.weather-app-temperature-container{
+
+
+.weather-app-temperature-container {
   display: flex;
 }
 .weather-app-details strong {
