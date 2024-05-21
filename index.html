@@ -1,67 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/styles.css" />
-    <title>Meteo Project</title>
-  </head>
+<head>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <div class="weather-app">
-      <header>
-        <form action="">
-          <input
-            type="search"
-            placeholder="Enter a city ... "
-            required
-            class="search-form-input"
-          />
-          <input type="submit" value="Search" class="search-form-button" />
-        </form>
-      </header>
-      <main>
-        <div class="weather-app-data">
-          <div>
-            <h1 class="weather-app-city">Paris</h1>
-            <p class="weather-app-details">
-              Tuesday <strong>14:49</strong>, scattered clouds
-              <br />
-              Humidity: <strong>66%</strong>, Wind:<strong>3.13</strong>km/h
-            </p>
-          </div>
-          <div class="weather-app-temperature-container">
-            <div class="weather-app-icon">🌤</div>
-            <div class="weather-app-temperature">12</div>
-            <div class="weather-app-unit">°C</div>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <title>Meteo Project</title>
+</head>
+
+<body>
+  <div class="weather-app">
+    <header>
+      <form action="">
+        <input type="search" placeholder="Enter a city ... " required class="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
+    </header>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
+            Tuesday <strong>14:49</strong>, scattered clouds
+            <br />
+            Humidity: <strong>66%</strong>, Wind:<strong>3.13</strong>km/h
+          </p>
         </div>
-      </main>
-      <footer>
-        Coded by
-        <a href="https://github.com/lilianatutza" target="_blank"
-          >Liliana Tuta</a
-        >
-        and open-sourced on
-        <a href="https://github.com/lilianatutza/Meteo-project-" target="_blank"
-          >GitHub</a
-        >
-        and hosted on
-        <a
-          href="https://meteo-projectmeteo-project.netlify.app/"
-          target="_blank"
-          >Netfly</a
-        >.
-      </footer>
-    </div>
-   <script src="src/index.js"></script>
-  </body>
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-icon">🌤</div>
+          <div class="weather-app-temperature">12</div>
+          <div class="weather-app-unit">°C</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Coded by
+      <a href="https://github.com/lilianatutza" target="_blank">Liliana Tuta</a>
+      and open-sourced on
+      <a href="https://github.com/lilianatutza/Meteo-project-" target="_blank">GitHub</a>
+      and hosted on
+      <a href="https://meteo-projectmeteo-project.netlify.app/" target="_blank">Netfly</a>.
+    </footer>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
 </html>
