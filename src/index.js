@@ -1,3 +1,10 @@
+function searchCity(city) {
+  // make api call and update the  interface
+  
+}
+
+
+
 function handleSearchSubmit(event) {
 event.preventDefault();
 let searchInput = document.querySelector("#search-form-input");
