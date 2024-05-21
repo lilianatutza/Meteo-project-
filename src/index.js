@@ -1,11 +1,13 @@
 function refreshWeather(response) {
+  let temperatureElement = document.querySelector("#temperature")
+  temperatureElement.innerHTML = response.data.temperature.current;
   console.log(response.data.temperature.current);
 }
 
 function searchCity(city) {
 let apiKey = "bb604a31635tbbcod35f93428afe08ae";
 let apiURL =
-  `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&untis=metric"`;
+  `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&untis=metric`;
   axios.get(apiURL).then(refreshWeather)
   
 }
