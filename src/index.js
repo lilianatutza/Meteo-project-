@@ -8,7 +8,6 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
-  
 
   timeElement.innerHTML = formatDate(date);
   cityElement.innerHTML = response.data.city;
@@ -20,8 +19,6 @@ function refreshWeather(response) {
 }
 
 function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
   let days = [
     "Sunday",
     "Monday",
@@ -31,15 +28,16 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-
   let day = days[date.getDay()];
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  return `${day} ${hours}:${minutes}`;
+
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
 
   if (hours < 10) {
     hours = `0${hours}`;
+  }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
 }
