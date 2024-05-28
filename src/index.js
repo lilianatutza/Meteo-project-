@@ -44,7 +44,7 @@ function formatDate(date) {
 
 function searchCity(city) {
   let apiKey = "bb604a31635tbbcod35f93428afe08ae";
-  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&untis=metric`;
+  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiURL).then(refreshWeather);
 }
 
@@ -65,7 +65,7 @@ function displayForecast() {
 <div class="weather-forecast-day">
           <div class="weather-forecast-date">${day}</div>
           <div class="weather-forecast-icon">⛅</div>
-          <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temperatures"></div>
             <div class="weather-forecast-temperature">
               <strong>15°</strong>
             </div>
