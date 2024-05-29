@@ -54,6 +54,12 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
+
+function getForecast(city) {
+  let apiKey = "bb604a31635tbbcod35f93428afe08ae";
+  let apiURL = `https://api.shecodes.io/weather/v1/forecast?lon={lon}&lat={lat}&key={key}&units=metric`;
+ console.log(apiURL);
+}
 function displayForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
@@ -79,4 +85,5 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Bucharest");
+getForecast("Bucharest");
 displayForecast();
